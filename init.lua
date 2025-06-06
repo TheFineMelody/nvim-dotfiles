@@ -26,6 +26,11 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Yanking and pasting
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>p", '"+p')
+
 -- Diagnostics
 vim.diagnostic.config({
     virtual_text = true,
