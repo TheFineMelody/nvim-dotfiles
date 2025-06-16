@@ -3,9 +3,13 @@ return {
     {
         "olimorris/onedarkpro.nvim",
         priority = 1000, -- Ensure it loads first
-        opts = {
-            transparency = true,
-        },
+        config = function()
+            require("onedarkpro").setup({
+                options = {
+                    transparency = true,
+            }
+            })
+        end
     },
     {
         "luukvbaal/statuscol.nvim",
