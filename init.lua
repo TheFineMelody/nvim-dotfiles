@@ -28,5 +28,4 @@ vim.api.nvim_create_autocmd("CursorHold", {
 -- Setup lazy.nvim so that it takes plugins from the plugins directory!
 require("lazy").setup("plugins")
 
--- Setting colorscheme to dark
-vim.cmd("colorscheme onedark_dark")
+
